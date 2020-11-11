@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Art</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body class="regisBody">
+    <div class="header">
+        <img src="asset/Project_Lab_-_FancyArt_-_Logo_1.png" align="center" width="300em">
+    </div>
+    <div class="navBar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+            <li>
+                <a href="#">Auction</a>
+                <ul>
+                  <li><a href="auctionsOnGoing.html">On Going Auction</a></li>
+                  <li><a href="auctionsOnComing.html">On Coming Auction</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+    <div class="register">
+        <form align="center" id="regis1" name="regis1">
+            <h2>Register</h2>
+            <div>
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name">
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div>
+                <input type="password" name="pass" id="formpass" placeholder="Password">
+            </div>
+            <div>
+                <input type="password" name="cPassword" id="cPassword" placeholder="Confirm Password">
+            </div>
+            <div>
+                <select name="countryList" id="countryList" onchange="validateCountry()">
+                    <option value="o0">Choose your country</option>
+                    <option value="o1">Indonesia</option>
+                    <option value="o2">Singapore</option>
+                    <option value="o3">Malaysia</option>
+                    <option value="o4">Thailand</option>
+                </select>
+            </div>
+           <div>
+                <textarea name="formaddress" id="formaddress" cols="30" rows="1" placeholder="Address"></textarea>
+           </div>
+        </form>
+        <br>
+        <form id="regis2">
+            <div id="art" align="left">
+                <label>Art Preference</label>
+                <div>
+                    <label>
+                        <input type="radio" name="artPref" id="abstract">
+                        <label>Abstract Art</label>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="artPref" id="pop">
+                        <span>Pop Art</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="artPref" id="modern">
+                        <span>Modern Art</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="artPref" id="surr">
+                        <span>Surrealism</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="artPref" id="other">
+                        <span>Others</span>
+                    </label>
+                </div>
+            </div>
+            <br> 
+            <div align="center">
+                <label id="errorMsg"></label> <br> <br>
+            </div>
+            <!-- <div id="check" align="left">
+                <input type="checkbox" name="terms" id="terms"> <label>I agree with the terms and conditions of Fancy Art</label>
+            </div> -->
+            <div align="center">
+                <input type="button" id="regisBtn" value="Register" onclick="validateAll()"><br> <br>
+                <input type="reset" id="resetBtn" value ="Reset" onclick="resetForm()"> <br> <br>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="infoContainer">
+            <h2>FANCY ART</h2>
+            <div class="info">
+                <p>Location: </p>
+                <p> MH Thamrin Street No.1</p>
+                <p> Menteng, Central Jakarta </p>
+                <p> Jakarta 10310 </p>
+                <p> Indonesia</p>            
+            </div>
+            <div class="info">
+                <p>Contact us: </p>
+                <p><a href="http://instagram.com" target="_blank">Instagram</a></p>
+                <p><a href="http://facebook.com" target="_blank">Facebook</a></p>
+                <p><a href="http://twitter.com" target="_blank">Twitter</a></p> 
+                <p>(+62)8123123123</p>  
+            </div>
+        </div>
+
+        <div class="copyright">
+            <img src="asset/Project_Lab_-_FancyArt_-_Logo_2.png" alt="FancyArt Logo">
+            <p>
+                &copy;2020 FancyArt Inc. All rights reserved.
+            </p>
+        </div>
+
+        <script src="registerValidation.js"></script>
+        
+    </footer>
+    
+</body>
+</html>

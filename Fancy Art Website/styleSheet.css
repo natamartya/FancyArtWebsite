@@ -1,0 +1,475 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.regisBody{
+    margin: 0;
+    background-image: url(asset/background-register.jpg);
+    background-position: center;
+    width: 100%;
+    background-size: 100%;
+    
+}
+div{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+}
+.header{
+    background-color: #000000;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+/* Navigation Bar */
+.navBar{
+    background-color: #000000;
+    height: fit-content;
+    line-height: 50px;
+    color: white;
+    font-size: 1em;
+}
+.navBar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.navBar ul li{
+    text-align: center;
+    width: max-content;
+    position: relative;
+    display: inline-block;
+    padding: 0% 1%;
+}
+.navBar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.navBar ul li:hover{
+    background-color:  #dfa755;
+    color: black;
+}
+.navBar ul li ul{
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    width: 200%;
+}
+.navBar ul li ul li{
+    width: 100%;
+    display: none;
+}
+.navBar ul li:hover ul li{
+    display: block;
+}
+.navBar ul li:hover ul{
+    z-index: 1;
+}  
+
+@media screen and (max-width:800px){
+    .navBar ul li{
+        display: block;
+    }
+}
+
+#check{
+    text-align: left;
+    color: white;
+}
+#art{
+    color: white;
+}
+#art > div{
+    align-items: center;
+}
+
+/* a{
+    text-decoration: blink;
+    color: white;
+}
+a:hover{
+    color: #dfa755;
+} */
+footer{
+    background-color: #dfa755;
+    color: white;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+footer .infoContainer{
+    padding-left: 15%;
+    padding-right: 5%;
+}
+footer .info{
+    display: inline-block;
+    padding: 1%;
+    width: 30%;
+    height: 30%;
+    color: whitesmoke; 
+}
+footer .info p a{
+    text-decoration: none;
+    color: white;
+}
+footer .info p a:hover{
+    text-decoration: underline;
+}
+
+footer .copyright{
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+    display: block;
+}
+footer .copyright img{
+    width: 10%;
+    height: auto;
+}
+h2{
+    color:white;
+}
+.register{
+    background: black;
+    opacity: 90%;
+    padding: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 250px;
+    height: 650px;
+}
+form{
+    text-align: center;
+    width: 240px;
+}
+::placeholder{
+    color: white;
+    opacity: 80%;
+}
+#art > input{
+    text-align: left;
+}
+#regis1 input, textarea, select{
+    color: white;
+    width: 250px;
+    background: transparent;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    padding: 10px 0px;
+    font-family: 'Arial';
+    font-style: normal;
+}
+#regis2{
+    display: inline-block;
+}
+#art > div > label{
+    width: 250px;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Arial';
+    font-style: normal;
+    padding: 1%;
+}
+#art{
+    font-family: 'Arial';
+    font-style: normal;
+}
+select option{
+    color: black;
+}
+#regisBtn, #resetBtn{
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    padding: 12px 0px;
+    font-family: 'Arial';
+    font-style: normal;
+    width: 200px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#regisBtn:hover, #resetBtn:hover{
+    color: white;
+    background-color: #dfa755;
+}
+
+/* * {box-sizing:border-box} */
+
+.imageSliderImage{
+    width: 100%;
+}
+
+/*slideshow Panel*/
+.slideshow-container {
+  /* max-width: 1000px; */
+  width: 73%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide Slide*/
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* add Btn*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-family: Bahnschrift;
+  font-size: 28px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Text Number */
+.numbertext {
+  color: #f2f2f2;
+  font-family: Bahnschrift;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Indicator*/
+.dotContainer{
+    text-align:center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #dfa755;
+}
+
+/* Slide Animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#introduce{
+  font-family: Bahnschrift;
+  font-size: 24px;
+}
+
+#errorMsg{
+    color: red;
+}
+
+
+/* Gallery */
+.galleryContent{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+.galleryContainer{
+    width: 20%; 
+    padding: 3%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.galleryItem{
+    text-align: left;
+    font-family: BahnSchrift;
+    display: inline-block;
+    padding: 10%;
+    margin: 2%;
+    background-color: #f2f2f2;
+    width: 98%;
+    height: auto;
+}
+.galleryImage{
+    width: 100%;
+    cursor: zoom-in;
+}
+.galleryZoomInImage{
+    width: 100%;
+    cursor: zoom-in;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    cursor: pointer;
+}
+.galleryZoomInImage img{
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+
+.closeBtn{
+    float: right;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+    text-decoration: none;
+    color: black;
+}
+
+/* Auctions */
+.auctionsTitle{
+    color: black;
+}
+.auctionsContent{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+.auctionsContainer{
+    width: 60%; 
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.auctionItem{
+    text-align: left;
+    font-family: BahnSchrift;
+    display: inline-block;
+    padding: 5%;
+    margin: 2%;
+    background-color: #f2f2f2;
+    width: auto;
+    height: 30%;
+}
+.auctionImageContainer{
+    width: 40%;
+    height: auto;
+    display: inline-block;
+}
+.auctionImage{
+    width: 100%;
+    cursor: zoom-in;
+    display: inline-block;
+}
+.auctionDetailsContainer{
+    width: 50%;
+    height: 10%;
+    display: inline-block;
+    font-family: BahnSchrift;
+}
+.auctionOnComingImage{
+    width: 100%;
+    cursor: zoom-in;
+    display: inline-block;
+}
+#aboutUsBody{
+    background-color: white;
+}
+
+#aboutUsContent{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+#historyContent{
+    color: black;
+    font-family: Bahnschrift;
+    font-size: 1em;
+    width: 100%;
+    text-align: start;
+}
+#locationContent{
+    color: black;
+    font-family: Bahnschrift;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+#ot{
+    color: #4e3919;
+}
+.locationImage{
+    width: 50%;
+}
+.historyImage{
+    width: 30%;
+}
+
+/* @media screen and (max-width: 500px) and (orientation:portrait){
+    .header{
+        font-size: 1.75rem;
+        width: 100%;
+    }
+    .navBar{
+        display: none;
+    }
+    .navBarMobile{
+        display: block;
+    }
+    .footer{
+        width: 100%;
+    }
+} */
